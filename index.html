@@ -26,18 +26,21 @@
 
 
     <script>
+          const modal = document.getElementById("modal")
+          const btnopen = document.querySelector(".btnopen")
+          const btnclose = document.querySelector(".btnclose")
 
-         let modal = document.getElementById("modal")
-         let btnopen = document.querySelector(".btnopen")
-         let btnclose = document.querySelector(".btnclose")
+          const myModal = {
 
-         btnopen.addEventListener("click", function(e) {
+         'open': btnopen.addEventListener("click", function(e) {
              modal.style.display = "block";
-         })
+         }),
 
-         btnclose.addEventListener("click", function(e) {
+         'close': btnclose.addEventListener("click", function(e) {
              modal.style.display = "none";
-         })
+         }),
+
+        };
     
     
        
