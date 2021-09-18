@@ -4,6 +4,25 @@ body{
 
 }
 
-.container{
-    border-radius: auto;
+
+.btnopen{
+    background-color: pink;
+    cursor: pointer;
 }
+
+
+.container{
+    display: flex;
+    color:aqua;
+    width: 350px;
+    height: 250px;
+}
+
+.btnclose{
+    display: flex;
+    align-self: flex-end;
+    background-color: pink;
+    cursor: pointer;
+    
+}
+
