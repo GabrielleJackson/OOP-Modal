@@ -1,9 +1,10 @@
-body{
-    background-color: purple;
-    color: yellow;
-
+#modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
-
 
 .btnopen{
     background-color: pink;
@@ -13,7 +14,8 @@ body{
 
 .container{
     display: flex;
-    color:aqua;
+    background-color: purple;
+    color: aqua;
     width: 350px;
     height: 250px;
 }

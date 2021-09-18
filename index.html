@@ -9,7 +9,8 @@
     <h1>OOP Modal</h1>
 
     <button type="button" class="btnopen"><strong>Click me to launch Modal</strong></button>
-
+    
+    <div id="modal">
     <div class="container">
         <p>Hello, my name is Gabrielle and I am creating a Modal.
             I am learning JavaScript. Please click the close button to exit this modal!
@@ -19,13 +20,34 @@
         <button type="button" class="btnclose"><strong>Close me</strong></button>
         </div>
 
+        </div>
+
 
 
 
     <script>
-        let container = document.querySelector(".container")
-        let btnopen = document.querySelector(".btnopen")
-        let btnclose = document.querySelector(".btnclose")
+
+         let modal = document.getElementById("modal")
+         let btnopen = document.querySelector(".btnopen")
+         let btnclose = document.querySelector(".btnclose")
+
+         btnopen.addEventListener("click", function(e) {
+             modal.style.display = "block";
+         })
+
+         btnclose.addEventListener("click", function(e) {
+             modal.style.display = "none";
+         })
+    
+    
+       
+
+         
+    
+    
+
+
+
 
 
 
